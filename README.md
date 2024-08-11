@@ -47,5 +47,5 @@ ssh -i <key_path> openvpnas@<instance_public_ip>
 
 ## 🗂️ Resources
 
-[OpenVPN Access Server AMI](https://aws.amazon.com/marketplace/pp/prodview-y3m73u6jd5srk?applicationId=AWSMPContessa&ref_=beagle&sr=0-1)
-[OpenVPN Guide](https://openvpn.net/as-docs/aws-ec2.html)\
+[OpenVPN Access Server AMI](https://aws.amazon.com/marketplace/pp/prodview-y3m73u6jd5srk?applicationId=AWSMPContessa&ref_=beagle&sr=0-1)\
+[OpenVPN Guide](https://openvpn.net/as-docs/aws-ec2.html)
