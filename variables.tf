@@ -8,6 +8,17 @@ variable "aws_secret_key" {
   description = "AWS Secret Key"
 }
 
+variable "account_id" {
+  type        = string
+  description = "AWS Account ID"
+}
+
+variable "region" {
+  type        = string
+  default     = "eu-central-1"
+  description = "AWS Region"
+}
+
 variable "ami" {
   type        = string
   default     = "ami-039470c0765f439c4"
@@ -24,4 +35,10 @@ variable "key_path" {
   type        = string
   default     = "~/.ssh/id_rsa.pub"
   description = "Path to the public key"
+}
+
+variable "timezone" {
+  type        = string
+  default     = "Europe/Berlin"
+  description = "Timezone"
 }
