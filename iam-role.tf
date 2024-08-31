@@ -1,3 +1,5 @@
+data "aws_caller_identity" "current" {}
+
 resource "aws_iam_role" "openvpn_role" {
   name = "openvpn-ec2-switch-role"
 
@@ -25,7 +27,8 @@ resource "aws_iam_role" "openvpn_role" {
             "ec2:StartInstances",
             "ec2:StopInstances"
           ]
-          Resource = "arn:aws:ec2:${var.region}:${var.account_id}:instance/${aws_instance.openvpn_server.id}"
+          Resource = "arn:aws:ec2:${var.region}:${data.aws_caller_identity.current.account_id
+          }:instance/${aws_instance.openvpn_server.id}"
         }
       ]
     })
