@@ -9,7 +9,8 @@ resource "aws_instance" "openvpn_server" {
       max_price = 0.015
     }
   }
+  subnet_id = aws_subnet.openvpn_subnet.id
   tags = {
-    Name = "my-vpn"
+    Name = "openvpn"
   }
 }
