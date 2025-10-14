@@ -6,7 +6,7 @@ resource "aws_scheduler_schedule" "openvpn_scheduler_on" {
     mode = "OFF"
   }
   schedule_expression_timezone = var.timezone
-  schedule_expression          = "cron(0 5 * * ? *)"
+  schedule_expression          = "cron(0 7 * * ? *)"
 
   target {
     arn      = "arn:aws:scheduler:::aws-sdk:ec2:startInstances"
@@ -27,7 +27,7 @@ resource "aws_scheduler_schedule" "openvpn_scheduler_off" {
     mode = "OFF"
   }
   schedule_expression_timezone = var.timezone
-  schedule_expression          = "cron(0 23 * * ? *)"
+  schedule_expression          = "cron(0 22 * * ? *)"
 
   target {
     arn      = "arn:aws:scheduler:::aws-sdk:ec2:stopInstances"
