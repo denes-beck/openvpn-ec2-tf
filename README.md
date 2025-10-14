@@ -21,7 +21,6 @@ cd openvpn-ec2-tf
 ```hcl
 aws_access_key = "YOUR ACCESS KEY"
 aws_secret_key = "YOUR SECRET KEY"
-account_id = "YOUR ACCOUNT ID"
 region = "REGION" # Defaut: eu-central-1
 ami = "AMI ID" # Defaut: ami-039470c0765f439c4
 instance_type = "INSTANCE TYPE" # Defaut: t2.small (AMI recommended)
