@@ -8,11 +8,6 @@ variable "aws_secret_key" {
   description = "AWS Secret Key"
 }
 
-variable "account_id" {
-  type        = string
-  description = "AWS Account ID"
-}
-
 variable "region" {
   type        = string
   default     = "eu-central-1"
